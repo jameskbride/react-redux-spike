@@ -2,14 +2,15 @@ import React, { Component } from 'react'
 
 import Content from './components/Content'
 import NavButton from './components/NavButton'
+import './App.css'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <NavButton text="Back" />
-        <Content/>
-        <NavButton text="Forward" />
+        <NavButton className="column" text="Back" />
+        <Content className="column" />
+        <NavButton className="column" text="Forward" />
       </div>
     );
   }

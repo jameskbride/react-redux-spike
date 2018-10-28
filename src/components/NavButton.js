@@ -6,7 +6,7 @@ class NavButton extends Component {
     const {text} = this.props
 
     return (
-      <div><p>{text}</p></div>
+      <div className="column"><p>{text}</p></div>
     )
   }
 }
