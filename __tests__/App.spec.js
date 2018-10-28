@@ -11,4 +11,11 @@ describe("App", () => {
 
     expect(wrapper.text()).toContain('Learn React')
   })
+
+  it('has navigation controls', () => {
+    const wrapper = mount(<App />)
+
+    expect(wrapper.text()).toContain("Back")
+    expect(wrapper.text()).toContain("Forward")
+  })
 })
