@@ -8,9 +8,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavButton className="column" text="Back" />
+        <NavButton enabled={this.props.backEnabled} className="column" text="Back" />
         <Content className="column" />
-        <NavButton className="column" text="Forward" />
+        <NavButton enabled={this.props.forwardEnabled} className="column" text="Forward" />
       </div>
     );
   }

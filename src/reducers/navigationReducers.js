@@ -6,7 +6,7 @@ export default function navigationReducer(state = [], action) {
     case DISABLE_NAV:
       const backEnabled = action.payload.back
       const forwardEnabled = action.payload.forward
-      return [...state, backEnabled, forwardEnabled]
+      return {...state, backEnabled: backEnabled, forwardEnabled: forwardEnabled}
     default:
       return state
   }
